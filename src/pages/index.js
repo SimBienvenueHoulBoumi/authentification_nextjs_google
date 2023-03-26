@@ -132,10 +132,10 @@ export default function Home() {
 
   return (
     <>
-      <div className={styles.main}>
+      <div className="flex justify-center h-screen pt-64">
         <div>
           <button onClick={() => signIn()} className="btn">
-            Sign in
+            Log in
           </button>
         </div>
       </div>

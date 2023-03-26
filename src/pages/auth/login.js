@@ -4,15 +4,15 @@ import { authOptions } from '../api/auth/[...nextauth]';
 
 export default function SignIn({ providers }) {
   return (
-    <>
+    <div className="flex justify-center h-screen pt-48">
       {Object.values(providers).map((provider) => (
         <div key={provider.name}>
           <button className="btn" onClick={() => signIn(provider.id)}>
-            Sign in with one {provider.name}
+            Sign in with {provider.name}
           </button>
         </div>
       ))}
-    </>
+    </div>
   );
 }
 
