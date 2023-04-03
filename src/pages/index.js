@@ -19,6 +19,7 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main className={styles.main}>
+          {console.log(session.user)}
           <p> Nous sommes ravi de vous revoir : {session.user.name}</p>
           <div className={styles.description}>
             <p>
@@ -63,7 +64,6 @@ export default function Home() {
               />
             </div>
           </div>
-          {console.log(session)}
           <button className="btn" onClick={() => signOut()}>
             log out
           </button>
